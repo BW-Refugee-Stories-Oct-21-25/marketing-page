@@ -1,0 +1,38 @@
+.bottom{
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+
+  @media @phone {
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  .content {
+      width: 30%;
+      margin-bottom: 30px;
+
+      @media @phone{
+          width: 96%;
+          // padding: 20 2% 20;
+          padding-left: 4%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+      }
+
+
+      img {
+          border-radius: 15px;
+          margin: 15px 0 30px;
+      }
+
+      .buttons {
+          margin: 20px 0;
+          .button-creator(100%,40px,@btnColor,@btnFontColor,@btnFontSize);
+
+      }
+  }
+}
+

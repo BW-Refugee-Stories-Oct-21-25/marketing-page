@@ -1,0 +1,36 @@
+footer{
+  width: auto;
+  height: auto;
+  background-color: #BEE9E8;
+  .flex(center, center, column);
+  .bottom-nav {
+      margin-top: 20px;
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+
+      @media @phone{
+          flex-direction: column;
+          text-align: center;
+      }
+
+      a{
+          font-size: 1.8rem;
+          text-decoration: none;
+          color: black;
+
+          @media @phone{
+              padding: 10px 0;
+          }
+
+          &:hover{
+              color: gray;
+          }
+      }
+  }
+  
+  p{
+      text-align: center;
+      margin: 30px 0 10px;
+  }
+}
