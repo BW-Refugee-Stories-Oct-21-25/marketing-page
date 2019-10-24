@@ -257,18 +257,18 @@ footer {
   }
 }
 @media (max-width:500px) {
-  .home .refugee-images .sky,
-  .home .refugee-images .launch {
+  .home .refugee-images .kids,
+  .home .refugee-images .rice {
     display: none;
   }
 }
-.home .visit-planets {
+.home .relatability {
   padding: [object Object];
 }
-.home .visit-planets h3 {
+.home .relatability h3 {
   margin-top: 11px;
 }
-.home .visit-planets p {
+.home .relatability p {
   margin-top: 13px;
 }
 .home .walk {
@@ -310,6 +310,9 @@ footer {
   padding: 5px 10px;
   width: 30%;
   text-align: center;
+}
+.home .walk .btn a {
+  text-decoration: none;
 }
 @media (max-width:500px) {
   .home .walk .btn {
