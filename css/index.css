@@ -181,18 +181,18 @@ header {
   header {
     height: 200px;
   }
-}
+/* }
 header .main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10%;
+  padding: 0 10%; */
 }
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   header .main-header {
     flex-direction: column;
   }
-}
+} */
 
 /* header .main-header h1 {
   line-height: 40px;
@@ -204,8 +204,9 @@ header .main-header {
     font-weight: bold;
     font-size: large;
     position:relative;
-    top:8px;
+    top:20px;
     left:5px;
+    
   }
   .nav-bar .container .container-left img {
     width: auto;
@@ -214,24 +215,27 @@ header .main-header {
     left:5px;
     top:0px
   }
-header .main-header p {
+  .nav-bar .container .container-left p{
+    margin-top:30px;
+  }
+/* header .main-header p {
   padding-top: 50px;
   font-size: 1.8rem;
-  color: white;
-}
+  color: white; */
+/* }
 @media (max-width: 500px) {
   header .main-header p {
     display: none;
-  }
-}
-header .main-header .top-button {
+  } */
+
+/* header .main-header .top-button {
   display: flex;
   flex-direction: column;
 }
 header .main-header .top-button button:last-child {
-  margin-top: 10px;
-}
-header .main-header .top-button .buttons {
+  margin-top: 10px; */
+
+/* header .main-header .top-button .buttons {
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -244,21 +248,21 @@ header .main-header .top-button .buttons {
   font-weight: bold;
   cursor: pointer;
   font-size: 1.6rem;
-}
-@media (max-width: 500px) {
+} */
+/* @media (max-width: 500px) {
   header .main-header .top-button .buttons {
-    width: 100%;
-  }
-}
-header .main-header .top-button .buttons:hover {
+    width: 100%; */
+  
+/* header .main-header .top-button .buttons:hover {
   background: white;
-  color: #62B6CB;
-}
+  color: #62B6CB; */
+
 .navigation {
   height: 60px;
   display: flex;
   align-items: center;
   background: #4E8AAD;
+  margin-bottom:px
 }
 @media (max-width: 500px) {
   .navigation {
@@ -350,9 +354,10 @@ header .main-header .top-button .buttons:hover {
   padding-left: 5px;
 }
 .carousel img {
-  width: 100%;
-  display: none;
+  height:400px;
+  width:40%;
 }
+
 .bottom {
   display: flex;
   margin-top: 50px;
@@ -443,8 +448,6 @@ footer p {
   text-align: center;
   margin: 30px 0 10px;
 }
-/* //about page design start here*/
-
 .middle {
   display: flex;
   justify-content: center;
@@ -495,6 +498,7 @@ footer p {
   flex-wrap: wrap;
   justify-content: center;
   height: 100%;
+  margin-bottom: 160px;
 }
 .team .member-card {
   text-decoration: none;
@@ -503,28 +507,50 @@ footer p {
   height: 412px;
   margin: 20px;
 }
-.team .member-card .member-card,
+/* .team .member-card .member-card,
 .team .member-card .axx {
   width: 352px;
   height: 412px;
-  display: inline-block;
-}
+  display: inline-block; */
+/* }
 .team .member-card .axx {
   background-image: url('../assets/patern.png');
   position: absolute;
   background-size: 100%;
-  cursor: pointer;
-}
-.team .member-card .axx:hover {
-  opacity: 0;
-}
+  cursor: pointer; */
+
+/* .team .member-card .axx:hover {
+  opacity: 0; */
+
 .team .member-card .member-info {
   position: relative;
   text-align: center;
   height: 100%;
-  margin-top: 320px;
-  z-index: 3;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
 }
-.team .member-card .member-info p {
-  font-size: 2rem;
+.team .member-card .member-info .name {
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: #051da6;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top:50px;
 }
+.team .member-card .member-info .position {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.team .teammate .img {
+  height: 200px;
+}
+.team .teammate .img img {
+  width: 200px;
+  border-radius: 50%;
+}
+
